@@ -1,7 +1,7 @@
 === GoHighLevel Gravity Add-On ===
 Contributors: rakaaitechbd
 Donate link: https://rakaaitech.com
-Tags: gravity forms, gohighlevel, crm, contact form, lead connector
+Tags: gravity forms, integration, crm, contact form, lead connector
 Requires at least: 6.0
 Tested up to: 6.9
 Stable tag: 1.0.0
@@ -40,6 +40,11 @@ By installing and configuring this plugin with your GoHighLevel API credentials,
 4. Edit a form, open **Settings → GoHighLevel**, add a feed, map at least the Email field, and optionally enable opportunity creation and conditional logic.
 
 For API credentials: in GoHighLevel, go to Settings → API Keys and create or copy an API key; find your Location ID in Settings → Business Info or in the location URL.
+
+== Screenshots ==
+
+1. Forms → Settings → GoHighLevel: API key, Location ID, and Test Connection.
+2. Feed settings: contact field mapping, custom fields, and optional opportunity creation.
 
 == Frequently Asked Questions ==
 
