@@ -1,0 +1,21 @@
+{
+    "name": "lh-graphics/lh-ghl-gravity-addon",
+    "description": "Gravity Forms Add-On for GoHighLevel integration",
+    "type": "wordpress-plugin",
+    "author": {
+        "name": "RakaAITech",
+        "homepage": "https://rakaaitech.com"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LH_GHL_Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "test:verbose": "phpunit --testdox"
+    }
+}
