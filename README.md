@@ -45,6 +45,18 @@ A Gravity Forms add-on that syncs form submissions to **GoHighLevel** (LeadConne
 
 This section walks you through setting up the GoHighLevel Gravity Add-On from scratch.
 
+### Screenshots overview
+
+| Screenshot | Description |
+|------------|-------------|
+| [GoHighLevel settings](#step-2-configure-the-add-on-in-wordpress) | API key, Location ID, and Test Connection |
+| [GoHighLevel feeds list](#step-3-create-a-feed-for-a-form) | Form settings → GoHighLevel feeds |
+| [Contact field mapping](#step-3-create-a-feed-for-a-form) | Mapping form fields to GHL contact properties |
+| [Opportunity mapping](#step-3-create-a-feed-for-a-form) | Pipeline, stage, value, assignee |
+| [Conditional logic](#step-3-create-a-feed-for-a-form) | When to run the feed |
+
+---
+
 ### Step 1: Get your GoHighLevel API credentials
 
 1. Log in to your **GoHighLevel** account (app.gohighlevel.com or your white-label URL).
@@ -67,17 +79,31 @@ This section walks you through setting up the GoHighLevel Gravity Add-On from sc
 6. Click **Save Settings**.
 7. Click **Test Connection** to confirm the API key and Location ID are valid. You should see: *Connection successful! API key and Location ID are valid.*
 
+![GoHighLevel settings — API key, Location ID, Test Connection](screenshots/gf-ghl-settings.png)
+
 ### Step 3: Create a feed for a form
 
 1. Go to **Forms → [Your Form]** (or create a new form).
 2. In the form editor, open **Settings → GoHighLevel** (in the left sidebar).
 3. Click **Add New** to create a feed.
+
+![GoHighLevel feeds — add or edit a feed](screenshots/ghl-feeds.png)
+
 4. **Feed name** — Give the feed a descriptive name (e.g. “Main contact sync”).
 5. **Contact Field Mapping** — Map at least **Email** (required), plus any other fields (First Name, Last Name, Phone, etc.). Use the dropdowns to match form fields or enter custom/merge tag values.
+
+![Contact field mapping — map form fields to GHL contact properties](screenshots/feed-contact-mapping.png)
+
 6. **Custom Fields** (optional) — If you use custom fields in GoHighLevel, map them here. Choices are loaded from your location.
 7. **Tags** (optional) — Add comma-separated tags (merge tags supported).
-8. **Opportunity** (optional) — Enable “Create Opportunity” and choose Pipeline, Stage, Opportunity Name, Monetary Value, Assign To, and Status as needed.
+8. **Opportunity** (optional) — Enable "Create Opportunity" and choose Pipeline, Stage, Opportunity Name, Monetary Value, Assign To, and Status as needed.
+
+![Opportunity mapping — pipeline, stage, value, assignee](screenshots/feed-opportunity-mapping.png)
+
 9. **Conditional Logic** (optional) — Enable and set conditions so the feed runs only when certain field values are met.
+
+![Conditional logic — when to run the feed](screenshots/feed-conditional-mapping.png)
+
 10. Click **Save Settings**.
 
 ### Step 4: Test a submission
@@ -148,6 +174,7 @@ gohighlevel-gravity-add-on/     # or lh-ghl-gravity-addon (local)
 │   ├── class-lh-ghl-background.php  # Async processing
 │   ├── class-lh-ghl-logger.php     # Logging wrapper
 │   └── helpers.php                 # Helper functions
+├── screenshots/                  # Screenshots for README & wp.org assets
 ├── tests/                       # PHPUnit tests
 ├── composer.json
 └── README.md
