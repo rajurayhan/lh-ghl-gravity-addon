@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: GoHighLevel Gravity Add-On
- * Plugin URI:  https://github.com/rajurayhan/gohighlevel-gravity-form-add-on
+ * Plugin URI:  https://github.com/rajurayhan/lh-ghl-gravity-addon
  * Description: Gravity Forms Add-On that syncs form submissions to GoHighLevel (LeadConnector API) — creates/updates Contacts and optionally creates Opportunities.
  * Version:     1.0.0
  * Author:      RakaAITech
